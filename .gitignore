@@ -1,0 +1,4 @@
+pants/.pants.d
+pants/.pids
+pdm/.venv
+__pycache__

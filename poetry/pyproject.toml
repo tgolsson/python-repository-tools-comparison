@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "poetry-comparison-test"
+version = "0.1.0"
+description = "Example to compare against other frameworks"
+authors = [
+    "Tom Solberg <me@sbg.dev>",
+]
+license = "MIT"
+repository = "https://github.com/tgolsson/py-workflow-tools-compare"
+
+# These dependencies + GPU group will be installed by default.
+[tool.poetry.dependencies]
+python = "^3.8"
+tensorboard = "^2.8.0"
+setuptools = "=59.5"
+torch = { version = "1.10.2+cu111", source = "torch.org" }
+
+# Pure development dependencies when installed via Poetry, but not
+# when sourcing from PIP etc.
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+Sphinx = "^4.4.0"
+sphinxcontrib-apidoc = "0.3.0"
+sphinx-autodoc-typehints = "1.17.0"
+sphinx-rtd-theme = "^1.0.0"
+black = "^22.1.0"
+gsutil = "=4.66"
+isort = "^5.10.1"
+gym = {extras = ["atari", "classic_control"], version = "^0.22.0"}
+box2d = "2.3.10"
+pygame = "2.1.0"
+bandit = "1.7.4"
+
+[[tool.poetry.source]]
+name = "torch.org"
+url = "https://download.pytorch.org/whl/cu111/"
+secondary = true
+default = false

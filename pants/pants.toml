@@ -1,0 +1,35 @@
+[GLOBAL]
+pants_version = "2.13.0"
+
+use_deprecated_directory_cli_args_semantics = false
+pythonpath = ["%(buildroot)s/pants-plugins"]
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.python.lint.isort",
+  "pants.backend.python.lint.black",
+]
+
+use_deprecated_pex_binary_run_semantics = false
+
+
+[source]
+root_patterns = [
+  '/',
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[python]
+tailor_pex_binary_targets = true
+interpreter_constraints = [">=3.8"]
+enable_resolves = true
+
+[python-repos]
+indexes = [
+  "https://pypi.org/simple/",
+  "https://download.pytorch.org/whl/cu111/",
+]
+
+[python.resolves]
+python-default = "lockfile.lock"

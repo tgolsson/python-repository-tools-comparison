@@ -1,0 +1,36 @@
+[project]
+name = "poetry-comparison-test"
+version = "0.1.0"
+description = "Example to compare against other frameworks"
+authors = [
+   { name = "Tom Solberg", email = "me@sbg.dev" }
+]
+license = "MIT"
+requires-python = ">=3.8"
+repository = "https://github.com/tgolsson/py-workflow-tools-compare"
+
+dependencies = [
+    "black~=22.1.0",
+    "isort~=5.10.1",
+    "bandit~=1.7.4",
+    "tensorboard==2.8.0",
+    "setuptools==59.5",
+    "pytest~=6.0",
+    "gsutil~=4.66",
+    "gym[atari, classic_control]~=0.22.0",
+    "box2d~=2.3.10",
+    "pygame~=2.1.0",
+    "Sphinx~=4.4.0",
+    "sphinxcontrib-apidoc~=0.3.0",
+    "sphinx-autodoc-typehints~=1.17.0",
+    "sphinx-rtd-theme~=1.0.0",
+    "torch==1.10.2+cu111",
+]
+
+[tool.pdm.resolution]
+respect-source-order = true
+
+[[tool.pdm.source]]
+type = "index"
+url = "https://download.pytorch.org/whl/cu111/"
+name = "torch"
