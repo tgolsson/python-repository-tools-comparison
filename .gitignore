@@ -3,3 +3,4 @@ pants/.pids
 pdm/.venv
 __pycache__
 /pdm/.pdm.toml
+/pdm/__pypackages__/

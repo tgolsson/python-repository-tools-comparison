@@ -11,7 +11,7 @@
 
 * Generate lockfile from clean: 14m (!)
 * Incremental generate lockfile: 1m
-* Install: Fails on box2d - bug report filed.
+* Install: 1m
 
 ## Poetry:
 
