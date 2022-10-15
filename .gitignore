@@ -2,3 +2,4 @@ pants/.pants.d
 pants/.pids
 pdm/.venv
 __pycache__
+/pdm/.pdm.toml

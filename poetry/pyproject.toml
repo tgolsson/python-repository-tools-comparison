@@ -6,7 +6,7 @@ authors = [
     "Tom Solberg <me@sbg.dev>",
 ]
 license = "MIT"
-repository = "https://github.com/tgolsson/py-workflow-tools-compare"
+repository = "https://github.com/tgolsson/python-repository-tools-comparison"
 
 # These dependencies + GPU group will be installed by default.
 [tool.poetry.dependencies]
