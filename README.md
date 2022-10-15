@@ -3,7 +3,7 @@
 ## Pants:
 
 * Generate lockfile from clean: ~2m20
-* Incremental generate lockfile: Fails after ~1m34s -- bug report filed.
+* Incremental generate lockfile: Fails after ~1m34s -- runs out of memory.
 * Run from clean: ~3m30
 * Run without new deps: ~6s
 
