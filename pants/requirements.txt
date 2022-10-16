@@ -9,4 +9,3 @@ Sphinx~=4.4.0
 sphinxcontrib-apidoc~=0.3.0
 sphinx-autodoc-typehints~=1.17.0
 sphinx-rtd-theme~=1.0.0
-torch==1.10.2+cu111

@@ -22,14 +22,16 @@ enabled = false
 
 [python]
 tailor_pex_binary_targets = true
-interpreter_constraints = [">=3.8"]
+interpreter_constraints = ["==3.8.10"]
 enable_resolves = true
+default_resolve = "python-default"
 
 [python-repos]
 indexes = [
   "https://pypi.org/simple/",
-  "https://download.pytorch.org/whl/cu111/",
+  "https://download.pytorch.org/whl/",
 ]
 
 [python.resolves]
 python-default = "lockfile.lock"
+gpu = "lockfile-gpu.lock"
